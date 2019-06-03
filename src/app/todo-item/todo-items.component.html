@@ -1,0 +1,16 @@
+<div class="todo-item" *ngFor="let item of items; index as i">
+  <button mat-icon-button class="check-item-button" (click)="toggleCompleted(item)">
+    <mat-icon>{{ item.completed ? 'check_circle_outline' : 'panorama_fish_eye' }}</mat-icon>
+  </button>
+  <div
+    class="todo-item-title"
+    [ngClass]="{ completed : item.completed }">{{ item.title }}
+    </div>
+  <button
+    mat-icon-button
+    class="delete-item-button"
+    (click)="deleteItem(i)"
+  >
+    <mat-icon>clear</mat-icon>
+  </button>
+</div>

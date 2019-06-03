@@ -1,0 +1,22 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .delete-item-button {
+      visibility: visible;
+    }
+  }
+
+  .todo-item-title {
+    flex: 1;
+
+    &.completed {
+      text-decoration: line-through;
+    }
+  }
+
+  .delete-item-button {
+    visibility: hidden;
+  }
+}

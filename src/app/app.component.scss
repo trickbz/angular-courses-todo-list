@@ -1,0 +1,16 @@
+.app-container {
+  width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+
+  .app-title {
+    text-align: center;
+  }
+
+  .footer {
+    margin-top: 20px;
+  }
+}
+
+
